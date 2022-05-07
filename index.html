@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Simple Calculator</title>
+    <title>Simple Interest Calculator</title>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="maindiv">
       <h1>Simple Interest Calculator</h1>
-
-      Amount <input type="number" id="principal" /> <br />
-      Interest Rate
+      
+      Amount <input type="number" id="principal" placeholder="Enter principal amount"/> <br />
+      <br>Interest Rate
       <input
         type="range"
         id="rate"
@@ -21,6 +21,7 @@
         onchange="updateRate()"
       />
       <span id="rate_val"> 10.25% </span><br />
+      <br>
       No. of Years
       <select id="years">
         <option value="1">1</option>
@@ -35,8 +36,9 @@
         <option value="10">10</option>
       </select>
       <br />
+      <br>
       <button type="button" onclick="compute()">Compute Interest</button>
-      <br/><span id="result"></span>
+      <br><br/><span id="result"></span>
       <div id="num"> </div>
       <footer>&#169; This Calculator belongs to Shivam Gosain</footer>
     </div>
