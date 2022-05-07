@@ -1,1 +1,1 @@
-# coding-project-template
+Assignment Simple Interest Calculator.
